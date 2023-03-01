@@ -7,7 +7,7 @@ import React from "react";
 
 function App() {
   const [currentIndex, setCurrentIndex] = React.useState(-1);
-  const [isPlaying, setIsPlaying] = React.useState(false);
+
   const audio = new Audio(sound);
   const celebrate = new Audio(celebratemp3)
   audio.loop = true;
@@ -17,12 +17,12 @@ function App() {
         setTimeout(() => {
           setCurrentIndex(1);
         }, 14000);
-        return <img src="./wave.gif" />;
+        return <img alt="bday" src="./wave.gif" />;
       case 1:
         setTimeout(() => {
           setCurrentIndex(2);
         }, 2000);
-        return <img src="./madness.gif" />;
+        return <img alt="bday" src="./madness.gif" />;
         case 2:
           setTimeout(() => {
             setCurrentIndex(3);
@@ -42,9 +42,9 @@ function App() {
               width: "100%",
             }}
           >
-            <img src="./t1.gif" />
-            <img src="./t2.gif" />
-            <img src="./t3.gif" />
+            <img alt="bday" src="./t1.gif" />
+            <img alt="bday" src="./t2.gif" />
+            <img alt="bday" src="./t3.gif" />
           </div>
         </div>)
         case 3:
@@ -67,8 +67,8 @@ function App() {
                 width: "100%",
               }}
             >
-              <img src="./1pm.gif" />
-              <img src="./friday.gif" />
+              <img alt="bday" src="./1pm.gif" />
+              <img alt="bday" src="./friday.gif" />
             </div>
             <div
               style={{
@@ -77,8 +77,8 @@ function App() {
                 width: "100%",
               }}
             >
-              <img src="./3pm.gif" />
-              <img src="./Saturday.gif" />
+              <img alt="bday" src="./3pm.gif" />
+              <img alt="bday" src="./Saturday.gif" />
             </div>
             <div
               style={{
@@ -87,8 +87,8 @@ function App() {
                 width: "100%",
               }}
             >
-              <img src="./nvm.gif" />
-              <img src="./Sunday.gif" />
+              <img alt="bday" src="./nvm.gif" />
+              <img alt="bday" src="./Sunday.gif" />
             </div>
           </div>
         );
@@ -96,9 +96,9 @@ function App() {
             setCurrentIndex(5)
             celebrate.loop = true;
             celebrate.play();
-        return <img src="./happybday.gif" />;
+        return <img alt="bday" src="./happybday.gif" />;
         case 5:
-          return <img src="./happybday.gif" />;
+          return <img alt="bday" src="./happybday.gif" />;
       default:
         return <h1 style={{ color: 'wheat'}}> Please check your sound is on ! then tap</h1>;
     }
